@@ -1,63 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzafar Ishmurotov | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
 
-  <div class="header"></div>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">Muzafar</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Lessons</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/muzafar-ishmurotov-8a03112a6" target="_blank">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <div class="main">
-    
-    <div class="copy-container">
-      <h1>HELLO WORLD <span>.</span></h1>
-      <h2>Let's learn to code</h2>
-    </div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>Hello, I'm <span>Muzafar Ishmurotov</span></h1>
+            <p>Student at UIN Malang | Passionate Web Developer</p>
+            <a href="#" class="btn">View My Work</a>
+        </div>
+    </section>
 
-    <div class="contents">
-      <h3 class="section-title">Lesson</h3>
+    <!-- LESSONS SECTION -->
+    <section class="lessons">
+        <div class="container">
+            <h2 class="section-title">Skills & Lessons</h2>
 
-      <div class="contents-item">
-        <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg" alt="HTML & CSS">
-        <p>HTML & CSS</p>
-      </div>
+            <div class="lesson-grid">
 
-      <div class="contents-item">
-        <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg" alt="PHP">
-        <p>PHP</p>
-      </div>
+                <div class="lesson-item">
+                    <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg" alt="HTML">
+                    <p>HTML & CSS</p>
+                </div>
 
-      <div class="contents-item">
-        <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg" alt="Ruby">
-        <p>Ruby</p>
-      </div>
+                <div class="lesson-item">
+                    <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg" alt="PHP">
+                    <p>PHP</p>
+                </div>
 
-      <div class="contents-item">
-        <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg" alt="Swift">
-        <p>Swift</p>
-      </div>
-    </div>
+                <div class="lesson-item">
+                    <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg" alt="Ruby">
+                    <p>Ruby</p>
+                </div>
 
-    <div class="contact-form">
-      <h3 class="section-title">Contact us</h3>
+                <div class="lesson-item">
+                    <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg" alt="Swift">
+                    <p>Swift</p>
+                </div>
 
-      <p>Email (Required)</p>
-      <input type="email" required>
+            </div>
+        </div>
+    </section>
 
-      <p>Message (Required)</p>
-      <textarea required></textarea>
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
 
-      <p>*Required fields must be filled</p>
+            <form>
+                <label>Email *</label>
+                <input type="email" placeholder="Enter your email" required>
 
-      <input class="contact-submit" type="submit" value="Send">
-    </div>
+                <label>Message *</label>
+                <textarea placeholder="Write your message" required></textarea>
 
-  </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-  <div class="footer"></div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Muzafar Ishmurotov. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
